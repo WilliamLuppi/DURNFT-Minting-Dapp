@@ -122,4 +122,4 @@ Now you can host the contents of the build folder on a server.
 
 That's it! you're done.
 
-If you have any problems pls feel free to ask for help in our <a href="https://discord.gg/Fe579jP8Pr">Discord</a>
+If you have any problems pls feel free to ask for help in our [🐶 Discord](https://discord.gg/Fe579jP8Pr)
