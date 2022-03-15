@@ -94,17 +94,16 @@ Now you will need to create and change the `public/favicon.ico`, `public/logo192
 Remember to update the title and description the `public/index.html` file
 
 ```html
-<title>Nerdy Coder Clones</title>
-<meta name="description" content="Mint your Nerdy Coder Clone NFT" />
+<title>Mint your Dogs Unleashed Roaming</title>
+<meta name="description" content="Dogs Unleashed Roaming is an Collection of 5K Dogs on the Polygon Blockchain" />
 ```
 
 Also remember to update the short_name and name fields in the `public/manifest.json` file
 
 ```json
 {
-  "short_name": "NCC",
-  "name": "Coder Clone NFT"
-}
+  "short_name": "Dogs Unleashed Roaming",
+  "name": "Dogs Unleashed Roaming is an Collection of 5K Dogs on the Polygon Blockchain.",
 ```
 
 After all the changes you can run.
@@ -122,3 +121,5 @@ npm run build
 Now you can host the contents of the build folder on a server.
 
 That's it! you're done.
+
+If you have any problems pls feel free to ask for help in our <a href="https://discord.gg/Fe579jP8Pr">Discord</a>
