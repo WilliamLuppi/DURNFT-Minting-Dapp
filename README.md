@@ -42,48 +42,49 @@ npm install
 
 In order to make use of this dapp, all you need to do is change the configurations to point to your smart contract as well as update the images and theme file.
 
-For the most part all the changes will be in the `public` folder.
+For the most part all the changes will be in the `src` folder.
 
-To link up your existing smart contract, go to the `public/config/config.json` file and update the following fields to fit your smart contract, network and marketplace details. The cost field should be in wei.
+To link up your existing smart contract, go to the `src/contracts/contract.json` file and update the following fields to fit your smart contract, network and marketplace details. The cost field should be in wei.
 
 Note: this dapp is designed to work with the intended NFT smart contract, that only takes one parameter in the mint function "mintAmount". But you can change that in the App.js file if you need to use a smart contract that takes 2 params.
 
 ```json
 {
-  "CONTRACT_ADDRESS": "0x827acb09a2dc20e39c9aad7f7190d9bc53534192",
-  "SCAN_LINK": "https://polygonscan.com/token/0x827acb09a2dc20e39c9aad7f7190d9bc53534192",
-  "NETWORK": {
-    "NAME": "Polygon",
-    "SYMBOL": "Matic",
-    "ID": 137
-  },
-  "NFT_NAME": "Nerdy Coder Clones",
-  "SYMBOL": "NCC",
-  "MAX_SUPPLY": 1000,
-  "WEI_COST": 75000000000000000,
-  "DISPLAY_COST": 0.075,
-  "GAS_LIMIT": 285000,
-  "MARKETPLACE": "OpenSea",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/nerdy-coder-clones",
-  "SHOW_BACKGROUND": true
-}
+  "name": "Dogs Unleashed Roaming",
+  "symbol": "DURNFT",
+  "total_supply": 5000,
+  "chain_symbol": "MATIC",
+  "chain": "Polygon",
+  "chain_id": 137,
+  "address": "0x2862490C8CAf2aA3a259CdE41A17Cb679D6D1986",
 ```
 
-Make sure you copy the contract ABI from remix and paste it in the `public/config/abi.json` file.
+Make sure you copy the contract ABI from remix and paste it in the `src/contracts/contract.json` file under the network and marketplace details.
 (follow the youtube video if you struggle with this part).
 
-Now you will need to create and change 2 images and a gif in the `public/config/images` folder, `bg.png`, `example.gif` and `logo.png`.
+Now you will need to create and change 1 image in the `src/assets` folder, `DURLogo.png`.
 
-Next change the theme colors to your liking in the `public/config/theme.css` file.
+Next change the theme colors to your liking in the `src/styles/styles.css` file.
 
 ```css
 :root {
-  --primary: #ebc908;
-  --primary-text: #1a1a1a;
-  --secondary: #ff1dec;
-  --secondary-text: #ffffff;
-  --accent: #ffffff;
-  --accent-text: #000000;
+  --button-bg: #8522c7;
+  --button-active-bg: #681d9b;
+  --small-button-bg: #919191;
+  --small-button-active-bg: #646464;
+  --large-button-bg: #ff0000;
+  --button-text: #ffffff;
+  --card: #ffffff;
+  --accountText: #ffffff;
+  --statusText: #470068;
+  --bg-gradient_1: rgb(153, 61, 0);
+  --bg-gradient_2: rgb(70, 26, 0);
+  --gradient_1: rgb(255, 166, 0);
+  --gradient_2: rgb(192, 189, 0);
+  --gradient_3: rgb(255, 196, 0);
+  --success: #24a13f;
+  --warning: #ca5824;
+  --error: #ca2f24;
 }
 ```
 
