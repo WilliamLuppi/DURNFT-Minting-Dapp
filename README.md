@@ -1,4 +1,4 @@
-# Welcome to HashLips 👄
+# Welcome to William Luppi
 
 ![](https://github.com/WilliamLuppi/DURNFT-Minting-Dapp/blob/main/DURLogo.png)
 
